@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <form action="LoginServlet" method="post">
+      <h1>Login</h1>
+
+      <!-- First Tab: Username / Mobile / Email -->
+      <div class="input-box">
+        <input type="text" name="userInput" placeholder="Mobile No / Email ID / Username" required />
+        <i class="bx bx-user"></i>
+      </div>
+
+      <!-- Second Tab: Password -->
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required />
+        <i class="bx bx-lock"></i>
+      </div>
+
+      <!-- Forgot Password -->
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Remember Me</label>
+        <a href="forgotpassword.html">Forgot Password?</a>
+      </div>
+
+      <button type="submit">Login</button>
+
+      <div class="register-link">
+        <p>Don't have an account? <a href="Register.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
